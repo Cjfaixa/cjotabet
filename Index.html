@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Apostas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Casa de Apostas</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#apostas">Apostas</a></li>
+                <li><a href="#promocoes">Promoções</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Bem-vindo à Casa de Apostas</h2>
+            <p>Aposte nos melhores eventos esportivos!</p>
+            <button onclick="location.href='#apostas'">Ver Apostas</button>
+        </section>
+
+        <section id="apostas">
+            <h2>Apostas Disponíveis</h2>
+            <div class="eventos">
+                <!-- Eventos com odds -->
+                <div class="evento">
+                    <h3>Jogo 1: Time A vs Time B</h3>
+                    <p>Odd Time A: <span class="odd">1.5</span></p>
+                    <p>Odd Time B: <span class="odd">2.8</span></p>
+                    <button>Apostar</button>
+                </div>
+                <div class="evento">
+                    <h3>Jogo 2: Time C vs Time D</h3>
+                    <p>Odd Time C: <span class="odd">1.9</span></p>
+                    <p>Odd Time D: <span class="odd">3.1</span></p>
+                    <button>Apostar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="promocoes">
+            <h2>Promoções</h2>
+            <p>Desconto de 50% na primeira aposta!</p>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos a melhor casa de apostas online com as melhores odds e uma experiência de usuário incomparável!</p>
+        </section>
+
+        <section id="contato">
+            <h2>Fale Conosco</h2>
+            <form action="contato.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Casa de Apostas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
